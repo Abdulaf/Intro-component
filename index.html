@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Intro&mdash;component</title>
+  </head>
+  <body>
+    <!-- Desktop background-image -->
+    <img
+      src="images/bg-intro-desktop.png"
+      class="absolute bg-customRed h-screen w-screen md:block hidden -z-10"
+      alt="bg-intro-desktop"
+    />
+    <!-- Mobile background-image -->
+    <img
+      src="images/bg-intro-mobile.png"
+      class="absolute bg-customRed w-screen block md:hidden -z-10 h-[980px]"
+      alt=""
+    />
+    <!-- global container -->
+    <div
+      class="flex flex-col md:flex-row items-center gap-16 md:gap-12 mx-auto md:max-w-6xl md:h-screen p-3"
+    >
+      <!-- Decription -->
+      <div
+        class="flex flex-col gap-7 max-w-lg text-opacity-90 md:text-start text-center"
+      >
+        <h1 class="font-bold text-white text-4xl md:text-6xl">
+          Learn to code by watching others
+        </h1>
+        <p class="text-white text-lg">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <!-- CTA -->
+      <div class="flex flex-col text-white md:p-7 md:gap-5 gap-10">
+        <div
+          class="bg-customPurple py-4 text-center rounded-lg shadow-xl flex items-center gap-2 justify-center"
+        >
+          <b class=""> Try it free 7 days</b>
+          <p class="text-white text-opacity-80">then $20/mo. thereafter</p>
+        </div>
+        <!-- CTA form container -->
+        <form
+          class="flex flex-col gap-5 p-6 bg-white rounded-lg shadow-2xl"
+          action=""
+        >
+          <!-- First name input -->
+          <input
+            type="text"
+            name="first-name"
+            placeholder="First Name"
+            class="py-2 text-lg border-2 px-5 text-black outline-customLightPurple rounded-lg first-name-input"
+          />
+          <label
+            for="text"
+            class="text-customRed ml-auto font-semibold text-sm -m-2 relative first-name-error-text hidden"
+          >
+            <img
+              src="images/icon-error.svg"
+              class="h-5 w-5 absolute -top-12 right-4 first-name-error-img hidden"
+              alt=""
+            />
+            First Name cannot be empty
+          </label>
+          <!-- Last name input -->
+          <input
+            type="text"
+            name="last-name"
+            placeholder="Last Name"
+            class="py-2 text-lg border-2 px-5 text-black outline-customLightPurple rounded-lg last-name-input"
+          />
+          <label
+            for="last-name"
+            class="text-customRed ml-auto font-semibold text-sm -m-2 relative last-name-error-text hidden"
+          >
+            <img
+              src="images/icon-error.svg"
+              class="h-5 w-5 absolute -top-12 right-4 last-name-error-img hidden"
+              alt=""
+            />
+            Last Name cannot be empty
+          </label>
+          <!-- Email input -->
+
+          <input
+            type="email"
+            name="Email"
+            placeholder="me@gmail.com"
+            class="py-2 text-lg border-2 px-5 text-black outline-customLightPurple rounded-lg email-input"
+          />
+          <label
+            for="email"
+            class="text-customRed ml-auto font-semibold text-sm -m-2 relative email-error-text hidden"
+          >
+            <img
+              src="images/icon-error.svg"
+              class="h-5 w-5 absolute -top-12 right-4 email-error-img hidden"
+              alt=""
+            />
+            Looks like this is not an email
+          </label>
+          <!-- Password input -->
+          <input
+            type="password"
+            name="Password"
+            placeholder="Password"
+            class="py-2 text-lg border-2 px-5 text-black outline-customLightPurple rounded-lg password-input"
+          />
+          <label
+            for="password"
+            class="text-customRed ml-auto font-semibold text-sm -m-2 relative password-error-text hidden"
+            >Password cannot be empty
+            <img
+              src="images/icon-error.svg"
+              class="h-5 w-5 absolute -top-12 right-4 password-error-img hidden"
+              alt=""
+            />
+          </label>
+          <!-- Submit button -->
+          <button
+            class="bg-customGreen py-2 rounded-lg tracking-wider uppercase duration-700 transition-all ease-in-out hover:bg-opacity-80"
+            type="submit"
+          >
+            claim your free trail
+          </button>
+          <!-- T & S text -->
+          <p class="text-customLightPurple text-xs text-center">
+            By clicking the button, you are agreeing to our
+            <span class="text-customRed"> Terms and Services </span>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
