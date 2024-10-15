@@ -24,7 +24,7 @@ const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   const firstNameValue = firstName.value;
-  const lastNameValue = firstName.value;
+  const lastNameValue = lastName.value;
   const emailValue = email.value;
   const passwordValue = password.value;
   let valid = true;
